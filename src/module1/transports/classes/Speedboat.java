@@ -23,4 +23,11 @@ public class Speedboat extends Transport implements CarriesCargo, HasPropeller {
     public void hasPropeller() {
         System.out.println(this.name + "has propeller");
     }
+
+    public void getInfo() {
+        this.move();
+        this.carriesCargo();
+        this.hasPropeller();
+        System.out.println();
+    }
 }

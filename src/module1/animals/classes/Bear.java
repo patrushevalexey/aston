@@ -1,20 +1,23 @@
 package module1.animals.classes;
 
 import module1.animals.abstracts.Mammal;
-//import module1.animals.interfaces.HasFur;
 
-public class Bear extends Mammal /* implements HasFur */ {
+public class Bear extends Mammal {
     static final boolean isHibernation = true;
     static final boolean hasFur = true;
 
-    protected Bear(short age, float weight) {
+    public Bear(short age, float weight) {
         super(age, weight);
     }
 
-//    Для разнообразия указал имплементацию интерфейса, но кажется что не ок управлять
-//    такими значениями через интерфейс. Прошу дать ОС по бест практису.
-//    @Override
-//    public void hasFur() {
-//        System.out.println("Bear has fur");
-//    }
+    public void getInfo() {
+        System.out.println(
+                "Some info about bear:" +
+                        "\nisHibernation: " + isHibernation +
+                        "\nhasFur: " + hasFur +
+                        "\nage: " + this.age + " years" +
+                        "\nweight: " + this.weight + " kg"
+        );
+        System.out.println();
+    }
 }

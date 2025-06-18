@@ -36,4 +36,13 @@ public class Plane extends Transport implements CarriesCargo ,HasPropeller, HasW
     public void hasWings() {
         System.out.println(this.name + "has wings");
     }
+
+    public void getInfo() {
+        this.move();
+        this.carriesCargo();
+        this.hasPropeller();
+        this.hasWheels();
+        this.hasWings();
+        System.out.println();
+    }
 }

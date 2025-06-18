@@ -8,4 +8,6 @@ package module1.transports.abstracts;
      }
 
      protected abstract void move();
+
+     public abstract void getInfo();
 }

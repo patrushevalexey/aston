@@ -23,4 +23,11 @@ public class Truck extends Transport implements HasWheels, CarriesCargo {
     public void hasWheels() {
         System.out.println(this.name + "has wheels");
     }
+
+    public void getInfo() {
+        this.move();
+        this.carriesCargo();
+        this.hasWheels();
+        System.out.println();
+    }
 }

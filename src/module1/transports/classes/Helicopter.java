@@ -29,4 +29,12 @@ public class Helicopter extends Transport implements CarriesCargo, HasPropeller,
     public void hasWheels() {
         System.out.println(this.name + "has wheels");
     }
+
+    public void getInfo() {
+        this.move();
+        this.carriesCargo();
+        this.hasPropeller();
+        this.hasWheels();
+        System.out.println();
+    }
 }

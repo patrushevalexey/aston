@@ -17,4 +17,10 @@ public class Taxi extends Transport implements HasWheels {
     public void hasWheels() {
         System.out.println(this.name + "has wheels");
     }
+
+    public void getInfo() {
+        this.move();
+        this.hasWheels();
+        System.out.println();
+    }
 }

@@ -8,4 +8,6 @@ public abstract class Animal {
         this.age = age;
         this.weight = weight;
     }
+
+    public void getInfo() {};
 }
